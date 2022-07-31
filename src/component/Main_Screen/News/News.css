@@ -1,0 +1,13 @@
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  margin: 0 auto;
+  background-color: #f8f9fd;
+}
+@media (max-width: 1170px) {
+  .news {
+    display: block;
+    width: 100vw;
+  }
+}

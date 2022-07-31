@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Comforter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comforter/v5/H4clBXOCl8nQnlaql3Qa6A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tenorsans/v17/bx6ANxqUneKx06UkIXISr3I.ttf) format('truetype');
+}
+.main {
+  height: 100%;
+  position: relative;
+}
+.main .block_main {
+  max-width: 1170px;
+  margin: 0 auto;
+  color: #fffcfa;
+}
+.main .block_main .text {
+  max-width: 440px;
+  padding-top: 180px;
+}
+.main .block_main .block_header {
+  font-family: 'Comforter', cursive;
+  font-size: calc(2em + 1.7vw);
+}
+.main .block_main .block_phrase {
+  font-style: italic;
+  line-height: 2em;
+  font-weight: bold;
+}
+.main .image_screen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.main .image_screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 470px) {
+  .main .block_main {
+    color: #292323;
+  }
+}

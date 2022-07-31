@@ -1,0 +1,48 @@
+.form_sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 80vh;
+  background-color: #f8f9fd;
+}
+.form_sign form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form_sign form div .active {
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 250px;
+  margin: 0 auto;
+}
+.form_sign form div .active_error {
+  height: 30px;
+  border: 1px solid rgba(255, 7, 7, 0.933);
+  width: 250px;
+  margin: 0 auto;
+}
+.form_sign form div .validation_error {
+  color: red;
+  width: 250px;
+}
+.form_sign form .validation_error {
+  color: red;
+  width: 250px;
+}
+.form_sign form button {
+  margin-top: 10px;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
