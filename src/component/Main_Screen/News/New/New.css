@@ -1,8 +1,8 @@
 .new {
-  max-width: 540px;
+  width: calc(100% - 51%);
   background-color: #f8f9fd;
   padding: 0px;
-  margin: 0px auto;
+  margin: 0px 0px 0px 0px;
 }
 .wrap_new {
   position: relative;
@@ -31,13 +31,4 @@
   font-size: 15px;
   padding: 10px 10px 10px 0px;
   text-align: justify;
-}
-@media (max-width: 1000px) {
-  .new {
-    max-width: 95vw;
-    margin: 0 auto;
-  }
-  .wrap_new .description {
-    padding: 10px 0px 10px 0px;
-  }
 }

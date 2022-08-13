@@ -1,9 +1,10 @@
 .profile {
-  width: 1170px;
-  margin: 0 auto;
+  background-color: #f1f1f1;
 }
 .profile .block_profile {
   display: grid;
+  margin: 0 auto;
+  width: calc(100% - 25vw);
   grid-template-areas: 'a b';
   grid-template-columns: 30% 70%;
 }
@@ -11,9 +12,10 @@
   grid-area: a;
 }
 .profile .block_profile .block_foto img {
-  width: 351px;
-  border-radius: 180px;
-  padding-top: 20px;
+  width: 100%;
+  margin: 20px auto 0px auto;
+  overflow: hidden;
+  border-radius: 50%;
 }
 .profile .block_profile .block_info {
   grid-area: b;
@@ -25,33 +27,4 @@
 }
 .profile .block_profile .block_info .block_about_me {
   text-align: justify;
-}
-@media (max-width: 1170px) {
-  .profile {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .profile .block_profile {
-    display: grid;
-    width: 100%;
-    grid-template-areas: 'a' 'b';
-    grid-template-columns: 1fr;
-  }
-  .profile .block_profile .block_foto {
-    grid-area: a;
-    margin: 0px auto;
-  }
-  .profile .block_profile .block_foto img {
-    width: 300px;
-    border-radius: 180px;
-    padding-top: 20px;
-  }
-  .profile .block_profile .block_info {
-    grid-area: b;
-    padding-top: 30px;
-    padding-left: 0px;
-  }
-  .profile .block_profile .block_info .block_name_user {
-    text-align: center;
-  }
 }

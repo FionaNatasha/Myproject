@@ -1,5 +1,6 @@
 
 import './App.css';
+import './normalize.css'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Main from './component/Main_Screen/Main/Main'
 import News from './component/Main_Screen/News/News'

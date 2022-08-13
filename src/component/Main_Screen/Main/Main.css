@@ -17,7 +17,7 @@
   position: relative;
 }
 .main .block_main {
-  max-width: 1170px;
+  width: calc(100% - 25vw);
   margin: 0 auto;
   color: #fffcfa;
 }

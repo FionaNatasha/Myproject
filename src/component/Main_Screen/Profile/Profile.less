@@ -1,21 +1,30 @@
 .profile {
-    width: 1170px;
-    margin: 0 auto;
+    background-color: #f1f1f1;
+  
 
 
     .block_profile {
-        display: grid;
+        display: grid; 
+        margin: 0 auto;
+        width: calc(100% - 25vw);
         grid-template-areas: 'a b';
         grid-template-columns: 30% 70%;
 
         .block_foto {
             grid-area: a;
+          
 
 
             img {
-                width: 351px;
-                border-radius: 180px;
-                padding-top: 20px;
+                
+                width: 100%;
+              
+                margin: 20px auto 0px auto;
+                overflow: hidden;
+                border-radius: 50%;
+                // width: 351px;
+                // border-radius: 200px;
+               
             }
 
         }
@@ -40,39 +49,39 @@
 
 }
 
-@media (max-width: 1170px) {
-    .profile {
-        width: 100%;
-        margin: 0 auto;
+// @media (max-width: 1170px) {
+//     .profile {
+//         width: 100%;
+//         margin: 0 auto;
 
 
-        .block_profile {
-            display: grid;
-            width: 100%;
-            grid-template-areas: 'a'
-                'b';
-            grid-template-columns: 1fr;
+//         .block_profile {
+//             display: grid;
+//             width: 100%;
+//             grid-template-areas: 'a'
+//                 'b';
+//             grid-template-columns: 1fr;
 
-            .block_foto {
-                grid-area: a;
-                margin: 0px auto;
+//             .block_foto {
+//                 grid-area: a;
+//                 margin: 0px auto;
 
-                img {
-                    width: 300px;
-                    border-radius: 180px;
-                    padding-top: 20px;
-                }
-            }
+//                 img {
+//                     width: 300px;
+//                     border-radius: 180px;
+//                     padding-top: 20px;
+//                 }
+//             }
 
-            .block_info {
-                grid-area: b;
-                padding-top: 30px;
-                padding-left: 0px;
+//             .block_info {
+//                 grid-area: b;
+//                 padding-top: 30px;
+//                 padding-left: 0px;
 
-                .block_name_user {
-                    text-align: center;
-                }
-            }
-        }
-    }
-}
+//                 .block_name_user {
+//                     text-align: center;
+//                 }
+//             }
+//         }
+//     }
+// }

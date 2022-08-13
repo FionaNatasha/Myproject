@@ -6,7 +6,7 @@ import Footer from './Footer/Footer';
 function SitePage(props) {
     return (
         < >
-            <Header {...props}/>
+            <Header {...props} />
             <Outlet />
             <Footer />
         </>
