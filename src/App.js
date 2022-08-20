@@ -6,7 +6,8 @@ import Main from './component/Main_Screen/Main/Main'
 import News from './component/Main_Screen/News/News'
 import Profile from './component/Main_Screen/Profile/Profile'
 import SitePage from './component/SitePage';
-import FormSign from './component/Form_Sign/FormSign';
+import SignIn from './component/Form_Sign/SignIn';
+import SignUp from './component/Form_Sign/SignUp';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { loginAction } from './store/login.reducer';
@@ -54,13 +55,14 @@ function App() {
           <Route
             path="profile"
             element={!isAuth ? (
-              <Navigate replace to="/login" />
+              <Navigate replace to="/signin" />
             ) : (
               <Profile />
             )
             }
           />
-          <Route path='login' element={<FormSign />} />
+          <Route path='signin' element={<SignIn />} />
+          <Route path='signup' element={<SignUp />} />
         </Route>
       </Routes>
 

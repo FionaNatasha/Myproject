@@ -1,32 +1,10 @@
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import "./FormSign.css";
-import {useForm} from './useForm.js'
-import {ValidateForm} from "./validation";
-
-function FormSign() {
-
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-  const state = useSelector((state) => state.login);
-  const stateOnServer = useSelector((state) => state.mongodb);
-
-  const {data, handleChange, onSubmitSignIn} = useForm(ValidateForm,dispatch,stateOnServer)
-
-
-  //при правильных данный, перенаправление на страницу Профиля
-  useEffect(() => {
-    if (state.auth) {
-      navigate("/profile");
-    }
-  });
- 
+function FormSign(props) {
+  let { state, data, handleChange, onSubmitSignIn, buttonTitle, formTitle } =
+    props;
   return (
     <div className="form_sign">
-      Вход в профиль
       <form>
-        Login
+        <div>{formTitle}</div>
         <div>
           <input
             type="text"
@@ -52,7 +30,9 @@ function FormSign() {
             onChange={handleChange}
             autoComplete="current-password"
             className={
-              state.passwordForm.validatePassword||!!state.errorLogin ? "active" : "active_error"
+              state.passwordForm.validatePassword || !!state.errorLogin
+                ? "active"
+                : "active_error"
             }
           />
           {!state.passwordForm.validatePassword && (
@@ -64,7 +44,7 @@ function FormSign() {
         {state.errorLogin.length > 0 && (
           <div className="validation_error">{state.errorLogin}</div>
         )}
-        <button onClick={onSubmitSignIn}>Sign in</button>
+        <button onClick={onSubmitSignIn}>{buttonTitle}</button>
       </form>
     </div>
   );
