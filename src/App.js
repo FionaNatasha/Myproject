@@ -44,7 +44,7 @@ function App() {
   )
 
 
-  console.log('token1', token)
+
 
   return (
     <div className="App">
