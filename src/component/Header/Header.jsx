@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './header.css';
 import NavLinkList from './NavLinkList';
 
@@ -6,7 +7,9 @@ function Header(props) {
         <header className="header">
             <div className="container">
                 <div className="logo">
+                    <NavLink to='/'>
                     AitishNik
+                    </NavLink>
                 </div>
                 <div className="nav_link">
                    <NavLinkList {...props}/>

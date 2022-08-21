@@ -28,6 +28,13 @@
   font-size: calc(2em + 1.2vw);
   text-shadow: 2px 2px 3px #060000;
 }
+.header .container .logo a {
+  text-decoration: none;
+  color: black;
+}
+.header .container .logo.active {
+  text-decoration: none;
+}
 .header .container .nav_link {
   display: flex;
   justify-content: space-evenly;
@@ -44,4 +51,20 @@
   text-decoration: #032e0e underline;
   color: #032e0e;
   text-shadow: 1px 1px 2px #030000;
+}
+@media screen and (max-width: 650px) {
+  .header {
+    width: 100vw;
+  }
+  .header .container {
+    width: 95vw;
+    justify-content: center;
+  }
+  .header .container .nav_link {
+    padding-left: 5px;
+    justify-content: center;
+  }
+  .header .container .nav_link .a {
+    padding-left: 5px ;
+  }
 }

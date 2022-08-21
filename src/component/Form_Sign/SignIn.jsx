@@ -27,7 +27,7 @@ function SignIn() {
   });
 
   return (
-    <>
+    <div className="form">
       <FormSign
         state={state}
         data={data}
@@ -37,10 +37,10 @@ function SignIn() {
         formTitle={"Authorization"}
 
       />
-       <div>
-        You are not registred? Register <NavLink to="/signup">Sign Up</NavLink>
+       <div className="navlink_redirect">
+        Are you not registred? Register <NavLink to="/signup">Sign Up</NavLink>
       </div>
-    </>
+    </div>
   );
 }
 

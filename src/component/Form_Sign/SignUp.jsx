@@ -25,7 +25,7 @@ console.log(stateOnServer)
   });
 
   return (
-    <>
+    <div className="form">
       <FormSign
         state={state}
         data={data}
@@ -34,10 +34,10 @@ console.log(stateOnServer)
         buttonTitle={"Sign Up"}
         formTitle={"Registration"}
       />
-      <div>
-        Do you have an account<NavLink to="/signin">Sign In</NavLink>
+      <div className="navlink_redirect">
+        Do you have an account? <NavLink to="/signin">Sign In</NavLink>
       </div>
-    </>
+      </div>
   );
 }
 

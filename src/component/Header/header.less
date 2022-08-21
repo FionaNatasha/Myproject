@@ -13,10 +13,20 @@
 
 
         .logo {
+
             font-family: @font-family;
-             font-size: calc(2em + 1.2vw);
+            font-size: calc(2em + 1.2vw);
             text-shadow: 2px 2px 3px rgb(6, 0, 0, 0.3);
-           
+
+            a {
+                text-decoration: none;
+                color: black
+            }
+
+            &.active {
+                text-decoration: none;
+            }
+
 
         }
 
@@ -45,6 +55,27 @@
 
 }
 
+@media screen and (max-width: 650px) {
+    .header {
+        width: 100vw;
+
+        .container {
+            width: 95vw;
+            justify-content: center;
+
+            .nav_link {
+                padding-left: 5px;
+                justify-content: center;
+                .a{
+                    padding-left:5px ;
+                }
+            }
+        }
+
+
+    }
+}
+
 // @media (max-width: 1170px) {
 //     .header {
 //         width: 100vw;
@@ -55,7 +86,7 @@
 //            justify-content: center;
 
 //             .nav_link {
-                
+
 //                 width: 80%;
 //                 // min-width: 80vw;
 //                 padding-left: 0px;
