@@ -15,7 +15,7 @@ function NavLinkList(props) {
      <NavLink to='/'>MAIN</NavLink>
      <NavLink to='/news'>TOURS</NavLink>
      <NavLink to='/profile'>PROFILE</NavLink>
-     {props.isAuth&&<NavLink to='/signin' onClick={logOut}>Выйти</NavLink>}
+     {props.isAuth&&<NavLink to='/signin' onClick={logOut}>LOGOUT</NavLink>}
     </>
   );
 }

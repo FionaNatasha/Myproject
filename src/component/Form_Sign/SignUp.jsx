@@ -11,7 +11,6 @@ function SignUp(props) {
   const state = useSelector((state) => state.login);
   const stateOnServer = useSelector((state) => state.mongodb);
   const navigate = useNavigate();
-console.log(stateOnServer)
   const { data, handleChange, onSubmitSignUp } = useForm(
     ValidateForm,
     dispatch,
