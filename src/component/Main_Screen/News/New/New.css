@@ -32,3 +32,10 @@
   padding: 10px 10px 10px 0px;
   text-align: justify;
 }
+@media (max-width: 650px) {
+  .new {
+    width: 95vw;
+    margin: 0 auto;
+    border-bottom: 1px solid #213341;
+  }
+}

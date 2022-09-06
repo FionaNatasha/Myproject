@@ -8,10 +8,11 @@ function Header(props) {
   return (
     <header className="header">
       <div className="container">
-        <div className="logo">
+        <div className="logo" onClick={()=>isOpenMenu(false)}>
           <NavLink to="/">AitishNik</NavLink>
         </div>
-        <div className={ openMenu?"nav_link_open":"nav_link"}>
+        <div className={ openMenu?"nav_link_open":"nav_link"} onClick={()=>isOpenMenu(false)}>
+          
           <NavLinkList {...props} />
         </div>
         <div className="menu_burger">

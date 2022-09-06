@@ -88,9 +88,9 @@
     flex-direction: column;
     top: 0;
     right: 0;
-    inset: 0 0 0 10%;
+    inset: 0 0 0 0%;
     z-index: 1000;
-    justify-content: start;
+    justify-content: flex-start;
     padding-top: 100px;
     backdrop-filter: blur(1px);
     background: hsl(40, 50%, 90%);
