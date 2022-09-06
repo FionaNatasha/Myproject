@@ -6,11 +6,11 @@ function Main() {
       <div className='block_main'>
         <div className='text'>
           <div className='block_header'>
-            "Aitishik в путушествии"
+            "Aitishik on a journey"
           </div>
           <div className='block_phrase'>
-            "Путешествия лишают тебя дара речи,
-            а потом превращают в лучшего рассказчика" - <section>Ибн Баттута</section>
+            "Traveling—it leaves you speechless, 
+            then turns you into a storyteller" - <section>Ibn Battuta</section>
           </div>
         </div>
 

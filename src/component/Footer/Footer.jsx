@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer >
      <div className='block_footer'>
-       &copy; Все права защищены.Aitishik 2011-2022
+       &copy; All rights reserved.Aitishik 2011-2022
       </div>
     </footer>
   );
